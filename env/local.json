@@ -1,0 +1,10 @@
+{
+  "database": {
+    "hostname": "mysql.db.local",
+    "port": 12345
+  },
+  "address_service": {
+    "hostname": "address.local.com",
+    "port": 2222
+  }
+}
