@@ -10,8 +10,4 @@ import pytest
 
 
 def test_config(env, config):
-    if env == 'dev':
-        assert config['database']['hostname'] == 'mysql.db.dev'
-    elif env == 'local':
-        assert config['database']['hostname'] == 'mysql.db.local'
-    # assert config.db.hostname == 'mysql.db.local'
+    assert config['database']['hostname'] == f'mysql.db.{env}'
